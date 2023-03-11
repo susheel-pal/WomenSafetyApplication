@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@color/teal_200">
+
+    <Button
+        android:id="@+id/call_polish"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_margin="15dp"
+        android:padding="20dp"
+        android:textAlignment="center"
+        android:layout_marginTop="40dp"
+        android:text="polish"
+        android:textSize="60dp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@id/call_women_helpline"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/call_sos"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_margin="15dp"
+        android:padding="20dp"
+        android:textAlignment="center"
+        android:textSize="60dp"
+        android:text="sos"
+        android:textColor="@color/black"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/call_women_helpline"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_margin="15dp"
+        android:textAlignment="center"
+        android:padding="15dp"
+        android:textSize="40dp"
+        android:text="women helpline"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/call_polish" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/location"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_margin="15dp"
+        android:scaleType="centerCrop"
+        android:padding="15dp"
+        android:src="@drawable/location"
+        android:background="#ff0000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/call_sos" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>
